@@ -1,0 +1,37 @@
+module.exports = (sequelize, Sequelize) => {
+  const Parent = sequelize.define('parents', {
+    lastname: Sequelize.STRING,
+    firstname: Sequelize.STRING,
+    patronymic: Sequelize.STRING,
+    parentnow: Sequelize.BOOLEAN,
+    birthday: Sequelize.TEXT,
+    gender: Sequelize.STRING,
+    kinship: Sequelize.STRING,
+    kinshipdocument: Sequelize.STRING,
+    phone: Sequelize.STRING,
+    email: Sequelize.STRING,
+    policy: Sequelize.STRING,
+    snils: Sequelize.STRING,
+    medicalinsurancecompany: Sequelize.STRING,
+    inn: Sequelize.STRING,
+    series: Sequelize.STRING,
+    number: Sequelize.STRING,
+    dateissued: Sequelize.STRING,
+    whoissued: Sequelize.STRING,
+    city: Sequelize.STRING,
+    district: Sequelize.STRING,
+    locality: Sequelize.STRING,
+    street: Sequelize.STRING,
+    house: Sequelize.STRING,
+    apartment: Sequelize.STRING,
+    index: Sequelize.STRING,
+    kinshipdocument: Sequelize.STRING,
+    training: Sequelize.STRING,
+    busyness: Sequelize.STRING,
+    job: Sequelize.STRING,
+    blood: Sequelize.STRING,
+    published: Sequelize.BOOLEAN,
+  });
+
+  return Parent;
+};
